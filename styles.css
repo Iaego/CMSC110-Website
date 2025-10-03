@@ -42,7 +42,7 @@ body{
     background-color: peachpuff;
 }
 
-.reviews-section article {
+.reviews-section > article {
     background-color: white;
     margin: 20px;
     padding: 20px;
@@ -53,6 +53,55 @@ body{
 .about-us-section {
     background-color: lightgreen;
     padding: 50px;
+}
+
+.featured-foods {
+    padding: 50px;
+}
+
+.featured-foods > div {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-us-section {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.socials {
+    margin-left: 50px;
+}
+
+.link-columns {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 100px;
+    gap: 100px;
+}
+
+.link-columns > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
 
 .contact-header h1{
     text-align: center;
