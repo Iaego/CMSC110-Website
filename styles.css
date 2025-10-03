@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    height: 50px;
+    align-items: center;
+}
+
+
+
+
+.navbar > div:first-child{
+    color: white;
+    padding: 1%;
+}
+
+.navbar-right{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: fit-content;
+    gap: 30px;
+    padding-right: 1%;
+}
+
+.navbar-right div{
+    padding: 0%;
+}
