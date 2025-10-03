@@ -32,14 +32,21 @@ body{
 
 
 .hero {
+    height: 70vh;
     background-color: #FF474C;
     padding: 50px;
+    background-image: linear-gradient(to right, #FF3F33 ,transparent), url(media/hero-img.jpg);
+    /* background-image: url(media/hero-img.jpg); */
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:100%;
+
 }
 
 .reviews-section {
     display: flex;
     justify-content: space-around;
-    background-color: peachpuff;
+    background-color: #FFE6E1;
 }
 
 .reviews-section > article {
