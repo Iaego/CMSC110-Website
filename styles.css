@@ -75,16 +75,6 @@ body{
     padding-bottom: 20px;
 }
 
-.contact-header h1{
-    text-align: center;
-}
-
-.contact-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 footer {
     background-color: black;
     color: white;
@@ -111,6 +101,16 @@ footer {
     flex-direction: column;
     row-gap: 10px;
     align-items: center;
+}
+
+.contact-header h1{
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form{
