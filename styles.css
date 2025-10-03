@@ -61,9 +61,10 @@ body{
     height: 13%;
     border-radius: 50%;
     background-color:white;
-    overflow:hidden;
+    overflow: hidden;
     border: 1px solid black;
 }
+
 .user-img img{
     width: 100%;
     height: 100%;
@@ -77,12 +78,34 @@ body{
 }
 
 .about-us-section {
-    background-color: lightgreen;
+    display: flex;
+    background-color: #9FC87E;
+    height: 75vh;
+}
+
+.about-content{
     padding: 50px;
+}
+
+.about-media{
+    margin-top: auto;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+    background-color:white;
+    overflow: hidden;
+    clip-path: circle(50% at 69% 59%);
+    
+}
+.about-media img{
+    width: auto;
+    height: 100%;
+    transform: scale(1.1);
 }
 
 .featured-foods {
     padding: 50px;
+    background-color: white;
 }
 
 .featured-foods > div {
