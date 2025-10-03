@@ -55,6 +55,16 @@ body{
     padding: 50px;
 }
 
+.featured-foods {
+    padding: 50px;
+}
+
+.featured-foods > div {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .contact-header h1{
     text-align: center;
 }
