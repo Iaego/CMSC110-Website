@@ -42,7 +42,7 @@ body{
     background-color: peachpuff;
 }
 
-.reviews-section article {
+.reviews-section > article {
     background-color: white;
     margin: 20px;
     padding: 20px;
