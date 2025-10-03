@@ -69,9 +69,6 @@ body{
     height: 100%;
     transform: scale(1.4) translateY(5px);
 }
-.user-name, .user-desc{
-    margin: 0px;
-}
 
 .user-info{
     display: flex;
