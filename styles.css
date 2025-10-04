@@ -1,3 +1,4 @@
+/* Main elements */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -19,6 +20,18 @@ button{
     font-size: 100%;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
 .navbar{
     display:flex;
     flex-direction: row;
@@ -46,7 +59,7 @@ button{
     padding: 0%;
 }
 
-
+/* Hero section */
 .hero {
     display: flex;
     flex-direction: column;
@@ -75,6 +88,7 @@ button{
     font-size: 100%;
 }
 
+/* Reviews section */
 .reviews-section {
     display: flex;
     justify-content: space-around;
@@ -121,12 +135,7 @@ button{
     line-height: 0.5vh;
 }
 
-.about-us-section {
-    display: flex;
-    background-color: #9FC87E;
-    height: 75vh;
-}
-
+/* Featured section */
 .featured > h1{
     text-align: center;
 }
@@ -171,6 +180,7 @@ button{
     flex-direction: column;
 }
 
+/* Gallery section */
 .gallery > h1{
     text-align: center;
 }
@@ -186,7 +196,7 @@ button{
 .pic2{grid-area: pic2;}
 .pic3{grid-area: pic3;}
 .pic4{grid: pic4;}
-
+/* Setting up hover effects on images */
 .resto{
     display: flex;
     justify-content: center;
@@ -296,18 +306,13 @@ button{
 .pic4:hover > img{
     filter: brightness(60%);
 }
-
-
-
-
-
-
 .photo-grid img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
+/* Contact us section */
 .contact-us-section {
     background-color: rgb(200, 200, 200);
     display: flex;
@@ -318,6 +323,7 @@ button{
     padding-bottom: 20px;
 }
 
+/* Footer */
 footer {
     background-color: black;
     color: white;
@@ -356,23 +362,14 @@ footer {
     justify-content: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-form div{
-    display: flex;
-    flex-direction: column;
-}
-
+/* Contact Page */
 .names{
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
+/* Menu Page */
 .menu h1{
     text-align: center;
 }
