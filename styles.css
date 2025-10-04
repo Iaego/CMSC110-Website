@@ -54,14 +54,16 @@ button{
     height: 70vh;
     background-color: #FF474C;
     padding: 50px;
-    background-image: linear-gradient(to right, #FF3F33 ,transparent), url(media/hero-img.jpg);
+    background-image: linear-gradient(to bottom, #ae0520 ,transparent), url(media/hero-img.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 100%;
+    background-position: center;
+    text-align: center;
+    color: white;
 }
 
 .hero h1{
-    font-size: 13vh;
+    font-size: 10vh;
     margin: 0;
 }
 .hero p{
@@ -86,6 +88,7 @@ button{
     width: 25%;
     height: 15vh;
     border-radius: 12px;
+    filter: drop-shadow(0px 3px 15px #333);
 }
 
 .card h3{
@@ -124,29 +127,11 @@ button{
     height: 75vh;
 }
 
-.about-content{
-    padding: 50px;
+.featured > h1{
+    text-align: center;
 }
-
-.about-media{
-    margin-top: auto;
-    width: 100%;
-    height: 100%;
-    background-color:white;
-    overflow: hidden;
-    clip-path: circle(50% at 69% 59%);
-    
-}
-.about-media img{
-    width: auto;
-    height: 100%;
-    transform: scale(1.1);
-}
-
-.about-us-section button{
-    height: 6vh;
-    width: 8vw;
-    font-size: 100%;
+.featured hr{
+    width: 60%;
 }
 
 .featured-foods-section {
@@ -184,7 +169,143 @@ button{
 .featured-drinks {
     display: flex;
     flex-direction: column;
-    text-align: right;
+}
+
+.gallery > h1{
+    text-align: center;
+}
+
+.photo-grid{
+    display: grid;
+    grid-template-areas: 
+    "resto pic1 pic2"
+    "resto pic3 pic4";
+}
+.resto{grid-area: resto;}
+.pic1{grid-area: pic1;}
+.pic2{grid-area: pic2;}
+.pic3{grid-area: pic3;}
+.pic4{grid: pic4;}
+
+.resto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resto-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.resto img{
+    transition: filter 0.3s ease;
+}
+.resto:hover .resto-text{
+    display: block;
+}
+.resto:hover > img{
+    filter: brightness(60%);
+}
+
+.pic1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic1-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.pic1 img{
+    transition: filter 0.3s ease;
+}
+.pic1:hover .resto-text{
+    display: block;
+}
+.pic1:hover > img{
+    filter: brightness(60%);
+}
+
+.pic2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic2-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.pic2 img{
+    transition: filter 0.3s ease;
+}
+.pic2:hover .resto-text{
+    display: block;
+}
+.pic2:hover > img{
+    filter: brightness(60%);
+}
+
+.pic3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic3-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.pic3 img{
+    transition: filter 0.3s ease;
+}
+.pic3:hover .resto-text{
+    display: block;
+}
+.pic3:hover > img{
+    filter: brightness(60%);
+}
+
+.pic4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic4-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.pic4 img{
+    transition: filter 0.3s ease;
+}
+.pic4:hover .resto-text{
+    display: block;
+}
+.pic4:hover > img{
+    filter: brightness(60%);
+}
+
+
+
+
+
+
+.photo-grid img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .contact-us-section {
@@ -250,4 +371,8 @@ form div{
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+
+.menu h1{
+    text-align: center;
 }
