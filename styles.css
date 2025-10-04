@@ -104,13 +104,21 @@ body{
 }
 
 .featured-foods-section {
+    display: flex;
+    justify-content: center;
     padding: 50px;
+    gap: 50px;
 }
 
-.featured-foods-section > div {
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.featured-foods {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-foods-image {
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .contact-us-section {
