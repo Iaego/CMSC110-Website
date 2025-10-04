@@ -224,7 +224,7 @@ button{
 .pic1 img{
     transition: filter 0.3s ease;
 }
-.pic1:hover .resto-text{
+.pic1:hover .pic1-text{
     display: block;
 }
 .pic1:hover > img{
@@ -246,7 +246,7 @@ button{
 .pic2 img{
     transition: filter 0.3s ease;
 }
-.pic2:hover .resto-text{
+.pic2:hover .pic2-text{
     display: block;
 }
 .pic2:hover > img{
@@ -268,7 +268,7 @@ button{
 .pic3 img{
     transition: filter 0.3s ease;
 }
-.pic3:hover .resto-text{
+.pic3:hover .pic3-text{
     display: block;
 }
 .pic3:hover > img{
@@ -290,7 +290,7 @@ button{
 .pic4 img{
     transition: filter 0.3s ease;
 }
-.pic4:hover .resto-text{
+.pic4:hover .pic4-text{
     display: block;
 }
 .pic4:hover > img{
