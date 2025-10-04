@@ -103,9 +103,8 @@ body{
     transform: scale(1.1);
 }
 
-.featured-foods {
+.featured-foods-section {
     padding: 50px;
-    background-color: white;
 }
 
 .featured-foods-section > div {
