@@ -121,8 +121,28 @@ body{
     border-radius: 10px;
 }
 
+.featured-drinks-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.featured-drinks-image {
+    width: 40vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.featured-drinks {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
 .contact-us-section {
-    background-color: gray;
+    background-color: rgb(200, 200, 200);
     display: flex;
     align-items: center;
     padding-left: 50px;
