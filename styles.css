@@ -340,6 +340,11 @@ form div{
     padding-bottom: 20px;
 }
 
+.contact-us-section > h2 {
+    flex: 1;
+}
+
+
 /* Footer */
 footer {
     background-color: black;
