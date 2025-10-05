@@ -151,7 +151,7 @@ button{
 
 .featured-foods-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 50px;
     gap: 50px;
 }
@@ -159,6 +159,8 @@ button{
 .featured-foods {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 50vw;
 }
 
 .featured-foods-image {
@@ -167,12 +169,13 @@ button{
 }
 
 .featured-foods-image img {
-    object-fit: cover;
+    width: 600px;
+    height: 600px;
 }
 
 .featured-drinks-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 50px;
     gap: 50px;
 }
@@ -183,13 +186,16 @@ button{
 }
 
 .featured-drinks-image img {
-    object-fit: cover;
+    width: 600px;
+    height: 600px;
 }
 
 .featured-drinks {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: right;
+    width: 50vw;
 }
 
 .contact-us-section {
