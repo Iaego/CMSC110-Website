@@ -19,6 +19,11 @@ button{
     font-size: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar{
     display:flex;
     flex-direction: row;
