@@ -162,9 +162,12 @@ button{
 }
 
 .featured-foods-image {
-    width: 40vw;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.featured-foods-image img {
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .featured-drinks-section {
@@ -175,10 +178,12 @@ button{
 }
 
 .featured-drinks-image {
-    width: 40vw;
-    height: 50vh;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.featured-drinks-image img {
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .featured-drinks {
