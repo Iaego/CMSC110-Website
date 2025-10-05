@@ -1,3 +1,4 @@
+/* Main elements */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -24,6 +25,18 @@ a {
     color: inherit;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
 .navbar{
     display:flex;
     flex-direction: row;
@@ -51,7 +64,7 @@ a {
     padding: 0%;
 }
 
-
+/* Hero section */
 .hero {
     display: flex;
     flex-direction: column;
@@ -59,14 +72,16 @@ a {
     height: 70vh;
     background-color: #FF474C;
     padding: 50px;
-    background-image: linear-gradient(to right, #FF3F33 ,transparent), url(media/hero-img.jpg);
+    background-image: linear-gradient(to bottom, #ae0520 ,transparent), url(media/hero-img.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 100%;
+    background-position: center;
+    text-align: center;
+    color: white;
 }
 
 .hero h1{
-    font-size: 13vh;
+    font-size: 10vh;
     margin: 0;
 }
 .hero p{
@@ -78,6 +93,7 @@ a {
     font-size: 100%;
 }
 
+/* Reviews section */
 .reviews-section {
     display: flex;
     justify-content: space-around;
@@ -91,6 +107,7 @@ a {
     width: 25%;
     height: 15vh;
     border-radius: 12px;
+    filter: drop-shadow(0px 3px 15px #333);
 }
 
 .card h3{
@@ -123,35 +140,12 @@ a {
     line-height: 0.5vh;
 }
 
-.about-us-section {
-    display: flex;
-    background-color: #9FC87E;
-    height: 75vh;
+/* Featured section */
+.featured > h1{
+    text-align: center;
 }
-
-.about-content{
-    padding: 50px;
-}
-
-.about-media{
-    margin-top: auto;
-    width: 100%;
-    height: 100%;
-    background-color:white;
-    overflow: hidden;
-    clip-path: circle(50% at 69% 59%);
-    
-}
-.about-media img{
-    width: auto;
-    height: 100%;
-    transform: scale(1.1);
-}
-
-.about-us-section button{
-    height: 6vh;
-    width: 8vw;
-    font-size: 100%;
+.featured hr{
+    width: 60%;
 }
 
 .featured-foods-section {
@@ -203,6 +197,139 @@ a {
     width: 50vw;
 }
 
+/* Gallery section */
+.gallery > h1{
+    text-align: center;
+}
+
+.photo-grid{
+    display: grid;
+    grid-template-areas: 
+    "resto pic1 pic2"
+    "resto pic3 pic4";
+}
+.resto{grid-area: resto;}
+.pic1{grid-area: pic1;}
+.pic2{grid-area: pic2;}
+.pic3{grid-area: pic3;}
+.pic4{grid: pic4;}
+/* Setting up hover effects on images */
+.resto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resto-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.resto img{
+    transition: filter 0.3s ease;
+}
+.resto:hover .resto-text{
+    display: block;
+}
+.resto:hover > img{
+    filter: brightness(60%);
+}
+
+.pic1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic1-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.pic1 img{
+    transition: filter 0.3s ease;
+}
+.pic1:hover .pic1-text{
+    display: block;
+}
+.pic1:hover > img{
+    filter: brightness(60%);
+}
+
+.pic2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic2-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.pic2 img{
+    transition: filter 0.3s ease;
+}
+.pic2:hover .pic2-text{
+    display: block;
+}
+.pic2:hover > img{
+    filter: brightness(60%);
+}
+
+.pic3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic3-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.pic3 img{
+    transition: filter 0.3s ease;
+}
+.pic3:hover .pic3-text{
+    display: block;
+}
+.pic3:hover > img{
+    filter: brightness(60%);
+}
+
+.pic4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic4-text{
+    font-size: 10vh;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 2;
+}
+.pic4 img{
+    transition: filter 0.3s ease;
+}
+.pic4:hover .pic4-text{
+    display: block;
+}
+.pic4:hover > img{
+    filter: brightness(60%);
+}
+.photo-grid img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Contact us section */
 .contact-us-section {
     background-color: rgb(200, 200, 200);
     display: flex;
@@ -213,6 +340,7 @@ a {
     padding-bottom: 20px;
 }
 
+/* Footer */
 footer {
     background-color: black;
     color: white;
@@ -251,19 +379,80 @@ footer {
     justify-content: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-form div{
-    display: flex;
-    flex-direction: column;
-}
-
+/* Contact Page */
 .names{
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+
+/* Menu Page */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4vw;
+    background-image: url(media/bg-menu.jpg);
+    backdrop-filter: blur(10px) grayscale(100);
+}
+
+.menu > h1{
+    text-align: center;
+}
+
+.menu-col{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-top: 4vh;
+}
+
+.menu-card{
+    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5)
+}
+
+.food-info{
+    display:flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.food-img{
+    width: 100%;
+    height: 100%;
+}
+
+.food-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;    
+}
+
+.food-title{
+    display: flex;
+}
+
+.food-title p:last-child{
+    margin-left: auto;
+}   
+
+.food-desc{
+    text-align: left;
+}
+
+.menu-hr{
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#000000;
+  opacity: 40%;
+  height: 1px;
+  width: 90%;
 }
