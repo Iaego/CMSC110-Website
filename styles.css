@@ -20,6 +20,11 @@ button{
     font-size: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -145,7 +150,7 @@ form div{
 
 .featured-foods-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 50px;
     gap: 50px;
 }
@@ -153,31 +158,43 @@ form div{
 .featured-foods {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 50vw;
 }
 
 .featured-foods-image {
-    width: 40vw;
-    object-fit: cover;
-    border-radius: 10px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.featured-foods-image img {
+    width: 600px;
+    height: 600px;
 }
 
 .featured-drinks-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 50px;
     gap: 50px;
 }
 
 .featured-drinks-image {
-    width: 40vw;
-    height: 50vh;
-    object-fit: cover;
-    border-radius: 10px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.featured-drinks-image img {
+    width: 600px;
+    height: 600px;
 }
 
 .featured-drinks {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    width: 50vw;
 }
 
 /* Gallery section */
