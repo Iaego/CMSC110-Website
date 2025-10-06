@@ -169,11 +169,7 @@ form div{
 .featured-foods-image {
     aspect-ratio: 1/1;
     overflow: hidden;
-}
-
-.featured-foods-image img {
-    width: 600px;
-    height: 600px;
+    width:50%;
 }
 
 .featured-drinks-section {
