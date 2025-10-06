@@ -207,6 +207,7 @@ form div{
     grid-template-areas: 
     "resto pic1 pic2"
     "resto pic3 pic4";
+    font-size: 4vh;
 }
 .resto{grid-area: resto;}
 .pic1{grid-area: pic1;}
@@ -220,7 +221,6 @@ form div{
     align-items: center;
 }
 .resto-text{
-    font-size: 10vh;
     position: absolute;
     color: white;
     display: none;
@@ -242,7 +242,6 @@ form div{
     align-items: center;
 }
 .pic1-text{
-    font-size: 10vh;
     position: absolute;
     color: white;
     display: none;
@@ -264,7 +263,6 @@ form div{
     align-items: center;
 }
 .pic2-text{
-    font-size: 10vh;
     position: absolute;
     color: white;
     display: none;
@@ -286,7 +284,6 @@ form div{
     align-items: center;
 }
 .pic3-text{
-    font-size: 10vh;
     position: absolute;
     color: white;
     display: none;
@@ -308,7 +305,6 @@ form div{
     align-items: center;
 }
 .pic4-text{
-    font-size: 10vh;
     position: absolute;
     color: white;
     display: none;
@@ -399,6 +395,7 @@ footer {
     gap: 4vw;
     background-image: url(media/bg-menu.jpg);
     backdrop-filter: blur(10px) grayscale(100);
+    background-attachment: fixed;
 }
 
 .menu > h1{
@@ -410,6 +407,7 @@ footer {
     flex-direction: column;
     gap: 2vh;
     padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 .menu-card{
