@@ -354,6 +354,9 @@ footer {
 .socials {
     margin-left: 50px;
 }
+.socials a{
+    padding: 2px;
+}
 
 .link-columns {
     display: flex;
@@ -462,19 +465,21 @@ footer {
 
 /* About Page */
 .about-bg{
+    min-height: 100%;
     width: 100vw;
     height: 100vh;
     background-image: url(media/about-pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .about-card{
     position: relative;
     height: 40vh;
     width: 30vw;
-    margin: 10% 10% 10% auto;
+    margin: 0% 10% 10% auto;
+    top: 10%;
     padding: 1.3%;
     color: white;
     border-radius: 2%;
